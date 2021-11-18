@@ -1,14 +1,15 @@
 const path = require('path');
 
 module.exports = {
-    // mode:"development",
-    mode:'production',
+    mode:"development",
+    // mode:'production',
     entry: './src/main/React.jsx',
     output: {
         filename: 'bundled.myReactApp.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
+    devtool: 'inline-source-map',
     module: {
         rules: [
         {
