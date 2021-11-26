@@ -12,8 +12,10 @@
         }
     }
     & .Text__value{
+        max-width:587px;
+        max-height:333px;
         & h1{
-            max-width:587px;
+            
             font-style: normal;
             font-weight: 900;
             font-size: 96px;
