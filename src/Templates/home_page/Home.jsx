@@ -11,7 +11,7 @@ function HomePage(props){
                 <img src={Man_Photo} alt="Canit worker" />
             </div>
             <article className='Text__value'>
-                <h1>Digital Studio Canit</h1>
+                <h1>mercedes</h1>
                 <p>Помогаем постоянно занятым бизнесменам покорить цифровой мир</p>
                 <div className='Glitch__btn'>
                     <p>Сотрудничать</p>
