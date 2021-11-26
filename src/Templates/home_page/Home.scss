@@ -1,53 +1,69 @@
 .Home{
-    padding: 433px 50px 0 50px;
-    width:100vw;
-    height:100vh;
-    & .background__image{
-        & img{
-            height:100vh;
-            position: absolute;
-            z-index: -1;
-            top:0px;
-            right:0px;
+
+    padding: 454px 0 0 201px;
+    & .Home__backgroud{
+        overflow: hidden;
+        position: absolute;
+        width:100vw;
+        height:100vh;
+        z-index: -1;
+        top:0;
+        left:0;
+
+        & video{
+            width: 100vw;
         }
     }
-    & .Text__value{
-        max-width:587px;
-        max-height:333px;
+    & .Home__mainText{
+        max-width:1022px;
+        max-height:128px;
+        color: #FFFFFF;
+        
         & h1{
-            
+            font-family: RalewayEXLight;
             font-style: normal;
-            font-weight: 900;
-            font-size: 96px;
-            line-height: 90px;
-    
-            color: #FFFFFF;
+            font-size: 64px;
+            line-height: 64px;
+            max-height:128px;
+            letter-spacing: -5px;
         }
         & p{
-            max-width:494px;
+            margin:10px 0 0 0;
+            font-family: RalewayLight;
             font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 28px;
+            font-size: 28px;
+            line-height: 34px;
 
-            color: #FFFFFF;
-
-            margin:10px 0 25px 0;
-
+            
         }
-        & .Glitch__btn{
-            width: 222px;
-            height: 59px;
-            text-align: center;
+    }
 
-            background: #FF3030;
-            & p{
-                line-height: 59px;
+    & .Home_Circle{
+        & .arrow{
+            width:54px;
+            height:54px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+
+            position: absolute;
+            bottom:50px;
+
+            left:50%;
+            transform: translateX(-50%);
+
+            cursor: pointer;
+
+            & img{
+                margin:10px auto;
+                display: block;
+                transition: 0.15s all;
+                
             }
-            &:hover{
-                background:green ;
+
+            &:hover img{
+                margin:13px auto;
+                
             }
         }
     }
-    
 }

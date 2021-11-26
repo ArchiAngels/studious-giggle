@@ -1,0 +1,17 @@
+.News__Container{
+    display: flex;
+    max-width:100vw;
+    justify-content: space-between;
+    // padding: 68px 0 0 0;
+
+    & .Container__Other_News{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin:0 0 0 20px;
+        overflow: hidden;
+    }
+
+
+}
+

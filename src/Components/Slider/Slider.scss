@@ -1,0 +1,21 @@
+.Slider__Container{
+    margin:19px auto;
+    width:152px;
+    height:4px;
+    display: flex;
+    justify-content: space-between;
+    & span{
+        display: inline-block;
+        width: 32px;
+        height: 4px;
+        
+        background: #FBFBFB;
+        cursor: pointer;
+        transition: 0.15s all;
+
+    }
+    & .active{
+        width: 48px;
+        background: #00ADEF;
+    }
+}

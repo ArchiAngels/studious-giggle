@@ -1,24 +1,28 @@
 import React from "react";
 import './Home.scss';
-// import Navigator_TOP from "../../Components/nav_top/NavTop.jsx";
-// import Navigator_RIGHT from "../../Components/nav_right/Nav_right.jsx";
-import Man_Photo from '../../../media/home/Group_1.jpg';
+
+let back_video = './home/bg.webm';
+import arrow from '../../../media/home/arrow.png';
 
 function HomePage(props){
     return <>
-        <section className='Home'>
-            <div className='background__image'>
-                <img src={Man_Photo} alt="Canit worker" />
-            </div>
-            <article className='Text__value'>
-                <h1>mercedes</h1>
-                <p>Помогаем постоянно занятым бизнесменам покорить цифровой мир</p>
-                <div className='Glitch__btn'>
-                    <p>Сотрудничать</p>
-                </div>
-            </article>
-            
-        </section>
+       <section className='Home'>
+           <div className="Home__backgroud">
+                <video autoPlay loop muted>
+                    <source src={back_video} type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video> 
+           </div>
+           <article className='Home__mainText'>
+               <h1>Переосмысление совершенства вместе с Mercedes-Benz</h1>
+               <p>Дистрибьютор Daimler AG в Беларуси</p>
+           </article>
+           <div className="Home_Circle">
+               <div className="arrow">
+                   <img src={arrow} alt="Arrow" height="24px" />
+               </div>
+           </div>
+       </section>
     </>
 }
 

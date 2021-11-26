@@ -1,3 +1,5 @@
+@import url('./fonts.scss');
+
 *{
     margin:0;
     padding: 0;
@@ -16,6 +18,7 @@ html{
 body{
     width:100vw;
     height:100vh;
-    background: #030100;
-    font-family: Roboto;
+    background: #000000;
+    font-family: RalewayLight;
 }
+

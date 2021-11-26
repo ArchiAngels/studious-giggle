@@ -6,13 +6,13 @@ import NoMatch from "../Templates/NoMatch/NoMatch.jsx";
 import About from "../Templates/About/About.jsx";
 import Services from "../Templates/Services/Services.jsx";
 import Contacts from "../Templates/Contacts/Contacts.jsx";
+import News from "../Templates/News/News.jsx";
 
-import Navigator_TOP from "../Components/nav_top/NavTop.jsx";
-import Navigator_RIGHT from "../Components/nav_right/Nav_right.jsx";
+import Navigator from "../Components/nav_top/NavTop.jsx";
 
 const App = function(){
     return <>
-    <Navigator_TOP/>
+    <Navigator/>
 
     <Switch>
         
@@ -20,7 +20,11 @@ const App = function(){
             <HomePage/>
         </Route>
 
-        <Route exact path='/about'>
+        <Route exact path='/news'>
+            <News/>
+        </Route>
+
+        <Route exact path='/cars'>
             <About/>
         </Route>
 
@@ -36,8 +40,6 @@ const App = function(){
             <NoMatch/>
         </Route>
     </Switch>
-    
-    <Navigator_RIGHT/>
     </>;
 }
 

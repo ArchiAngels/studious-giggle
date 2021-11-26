@@ -1,11 +1,29 @@
-.Navigator__top{
+.Navigator{
     max-width:100vw;
-    padding: 50px;
+    padding: 0px 50px;
     position: absolute;
+    z-index: 999;
     top:0;
+    & .Navigator__logoLink{
+        display: flex;
+    }
+    & .Navigator__logoTitle{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 0 0 25px;
+        & p{
+            font-family: RalewayEXLight;
+            font-style: normal;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+    }
     & ul{
-        width:464px;
-        height:60px;
+        width:791px;
+        height:68px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -14,14 +32,30 @@
 
         list-style: none;
 
+        & li:not(:nth-child(1)){
+            transition: 0.15s all;
+            background: transparent;
+            text-align: center;
+            line-height: 68px;
+            padding: 0 1rem;
+
+            cursor: pointer;
+            &:hover{
+                background: #E5E5E5;
+
+                & a{
+                    color:#000;
+                }
+            }
+        }
+
         
         & a{
             color: #FFFFFF;
 
             font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 28px;
+            font-size: 18px;
+            line-height: 22px;
         }
 
     }
